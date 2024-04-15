@@ -1,9 +1,3 @@
-# nlp_tools
-simple tools for natural language processing
-
-### 문장 유사도 계산기
-
-```python
 from sentence_sim import SentenceSim
 
 sentencesim = SentenceSim()
@@ -15,4 +9,3 @@ compare_sentence_2 = '오늘 회사 구내식당의 메뉴로 나온 김치찌�
 print(f'문장1:{label_sentence}\n문장2:{compare_sentence_1}\n유사도:{sentencesim.cal_score(label_sentence,compare_sentence_1)}', end='\n\n')
 
 print(f'문장1:{label_sentence}\n문장2:{compare_sentence_2}\n유사도:{sentencesim.cal_score(label_sentence,compare_sentence_2)}', end='\n\n')
-```
