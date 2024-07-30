@@ -5,7 +5,8 @@ class SentenceSim:
     SCALE_FACTOR = 100
 
     def __init__(self, model_path='BM-K/KoDiffCSE-RoBERTa'):
-        self.device = 'cuda' if torch.cuda.is_available else 'cpu'
+        # self.device = 'cuda' if torch.cuda.is_available else 'cpu'
+        self.device = 'cpu'
         self.model = AutoModel.from_pretrained(model_path).to(self.device)
         self.tokenizer = AutoTokenizer.from_pretrained(model_path) 
 
